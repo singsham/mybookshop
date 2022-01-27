@@ -1,0 +1,68 @@
+@media only screen and (max-width: 992px) {
+  .section-1 {
+    padding: 10vmin 0;
+  }
+
+  .section-1 .row .col-md-7 img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .section-1 .row .col-md-5 .panel {
+    padding-top: 8vmin;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  .section-1 .row .col-md-5 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+  .section-2 .cover {
+    background-position: -25vmin -10vmin;
+  }
+
+  .numbers .rect {
+    width: 10rem;
+    height: 8rem;
+  }
+  .numbers .rect h1 {
+    font-size: 2rem;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+  .section-3 .row .col-md-6 {
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header .row .col-sm-12 {
+    padding: 10%;
+  }
+
+  .section-1 .row .col-md-7 img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+  }
+
+  .section-4 .card {
+    margin: 5% 1%;
+    padding: 1%;
+  }
+
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
+}

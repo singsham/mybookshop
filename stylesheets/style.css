@@ -1,0 +1,318 @@
+/* Google font */
+
+@import url("https://fonts.googleapis.com/css?family=Acme|Heebo|Lobster|Lobster+Two|Patua+One|Rubik|Sniglet&display=swap");
+
+*{
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Snigle-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "Lobster", cursive;
+  --light-black: #2e2c2caf;
+  --light-gray: rgba(0, 0, 0, 0.4);
+  --bggradient: linear-gradient(to bottom, #037a7a, #95ebeb);
+  --bggradient2: linear-gradient(to bottom, #0000008a, #0000001e);
+}
+
+header a {
+  font-family: var(--Snigle-font);
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+header {
+  background: var(--bggradient2);
+}
+header::before {
+  background: url("../assets/bg-3.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  z-index: -1;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px var(--light-gray);
+  z-index: 1;
+}
+header .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+}
+header .dropdown-content a:hover {
+  background: #d6cbc5;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+header .nav-item:last-child {
+  padding-right: 11em;
+}
+header .nav-item {
+  padding: 1em;
+}
+header .nav-link:hover {
+  color: black;
+}
+header .navbar-brand {
+  padding-left: 8rem;
+}
+header .row .col-md-7 {
+  padding: 20vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: var(--Rubik);
+  color: white;
+}
+header .row .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+header .row .col-md-7 h1 {
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+header .row .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+header .row .col-md-7 button {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+header .row .col-md-5 {
+  padding: 14vmin 1%;
+}
+
+header .row .col-md-5 img {
+  width: 100%;
+}
+
+/* section 1 */
+
+.section-1 {
+  padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-7 img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.section-1 .row .col-md-5:last-child {
+  position: relative;
+}
+
+.section-1 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10vmin 5vmin;
+  box-shadow: 0px 25px 42px var(--light-gray);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+/* section-2 */
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url("../assets/joy-3.jpg");
+  background-position: -24rem -10rem;
+  background-size: 130%;
+  position: relative;
+}
+.cover .content {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+  font-family: var(--Patua);
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+.cover .content > p {
+  font-family: var(--Rubik);
+  font-size: 2vmin;
+  color: #e5e5e5;
+}
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px #85f8f8;
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: #08bdbd;
+}
+.numbers .rect p {
+  font-family: var(--Patua);
+}
+.purchase > h1 {
+  padding-top: 15vmin;
+  font-family: var(--Lobster);
+}
+.purchase > p {
+  color: var(--light-black);
+  font-size: 3vmin;
+  padding-bottom: 10vmin;
+}
+.cards .card {
+  width: 22rem;
+  margin: 3vmin;
+}
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+.cards .title {
+  background: #08bdbd;
+  padding: 1.4rem 2.5rem;
+  font-size: 2vmin;
+}
+.card-text {
+  padding: 2.5rem 3rem;
+  color: var(--light-black);
+}
+.pricing {
+  background: #08bdbd;
+  border-radius: 170px 170px 0 0;
+}
+.pricing > h1 {
+  font-size: 6vmin;
+  padding: 1em 0.5em;
+}
+
+/* section-3 */
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: url("../assets/bg-3.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.download > h1 {
+  padding: 2em 0 1em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+.download > p {
+  padding: 0 4em 2em 4em;
+  font-size: 3vmin;
+  color: whitesmoke;
+  /* color: var(--light-gray); */
+}
+.platform .desktop,
+.mobile {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 2vmin 4.5vmin;
+  margin: 1em;
+}
+
+/* section-4 */
+.reader {
+  padding: 10% 1%;
+}
+.reader h1 {
+  font-size: 6vmin;
+}
+.section-4 .row {
+  margin-bottom: 10%;
+}
+.section-4 .card {
+  margin: 5% 10%;
+  padding: 1%;
+}
+.section-4 .card-body > a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 50%;
+}
+
+/* footer */
+
+footer {
+  background: #2e2e2e;
+  overflow-x: hidden;
+  padding: 10vmin;
+}
+
+footer p > span {
+  color: #24c1dd;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #24c1dd;
+}
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+/* Sticky Class */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
